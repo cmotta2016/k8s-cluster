@@ -6,7 +6,7 @@
 
 ## Instaling Grafana
 ### Create configmap
-	$vim config.yaml
+	$ vim config.yaml
 ```
 apiVersion: v1
 kind: ConfigMap
@@ -43,5 +43,3 @@ sidecar:
 
 ### Get password for "admin" user
 	$ kubectl get secret --namespace kube-monitoring grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
-
-
