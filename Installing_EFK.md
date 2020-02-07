@@ -26,4 +26,5 @@
       - hostPath:
           path: /u01
           type: ""
+	name: u01
 ```
